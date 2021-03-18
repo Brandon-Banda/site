@@ -1,1 +1,1 @@
-# site
+# My personal site (starting with a simple gear page)
