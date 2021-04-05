@@ -122,7 +122,7 @@ function Timer() {
             (status) =>
               "good, which means you sipped and this is how much time until you sip again."
           );
-        }, 1000);
+        }, 1000 * 60);
         return () => window.clearInterval(id);
       }
     } else {
