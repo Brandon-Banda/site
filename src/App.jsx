@@ -4,6 +4,7 @@ import Images from "./Images";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./Nav";
 import Water from "./pages/Water";
+import Counters from "./pages/Counters";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path='/water' component={Water} />
           <Route path='/' exact component={Home} />
+          <Route path='/counters' component={Counters} />
         </Switch>
       </div>
     </Router>

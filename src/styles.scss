@@ -79,7 +79,9 @@ body {
   }
 }
 .container .imgContainer {
-  max-width: 750px;
+  max-width: 500px;
+  max-height: 600px;
+  //max-width: 750px;
   margin: 1rem;
   border: 5px solid black;
   border-radius: 10px;
@@ -91,8 +93,8 @@ body {
 }
 
 .container .imgContainer img {
-  width: 400px;
-  max-height: 400px;
+  width: 300px;
+  max-height: 300px;
   align-items: center;
   transition: transform 450ms;
 }
@@ -150,13 +152,13 @@ body {
 .container .imgContainer h4 {
   color: #fff;
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .imgContainer p {
   color: #fff;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .nav-links {
