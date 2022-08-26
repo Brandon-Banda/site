@@ -16,4 +16,6 @@ function Counters() {
         </div>
     );
   }
+  // august 19th CFA
+  // beard when did i let it grow
 export default Counters;

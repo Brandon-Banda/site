@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./Nav";
 import Water from "./pages/Water";
 import Counters from "./pages/Counters";
+import Upload from "./pages/Upload";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/water' component={Water} />
           <Route path='/' exact component={Home} />
           <Route path='/counters' component={Counters} />
+          <Route path='/upload' component={Upload} />
         </Switch>
       </div>
     </Router>
