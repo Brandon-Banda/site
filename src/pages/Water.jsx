@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import "../styles.scss";
+import "./Water.scss";
 
 let changeX = "";
 
@@ -56,7 +56,7 @@ function ProgressBar() {
   return (
     <Track>
       <Thumb percentage={() => clamp(0, per, 100)} />
-      <h2 style={{ color: "white" }}>You've drank {per} oz Today!</h2>
+      <h2 style={{ color: "white" , justifyContent: "center", alignItems: "center"}}>You've drank {per} oz Today!</h2>
       <div className='button-container'>
         <button className='button' onClick={() => setPer(per + 2)}>
           One Sip
@@ -179,11 +179,13 @@ function Timer() {
 function Water() {
   return (
     <>
+    <div className='masterContainer'>
       <Timer />
       <div className='space'></div>
       <BarContainer>
         <ProgressBar />
       </BarContainer>
+    </div>
     </>
   );
 }
