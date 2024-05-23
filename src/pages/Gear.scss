@@ -1,120 +1,121 @@
 body {
-  background-color: #242526;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto;
-}
-
-@media all and (max-width: 3000px) {
+    background-color: #242526;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  @media all and (max-width: 3000px) {
+    .container .imgContainer {
+      width: calc(33% - 2rem);
+    }
+    .button {
+      display: block;
+      margin: 0.4em auto;
+    }
+  }
+  
+  @media all and (max-width: 1750px) {
+    .container .imgContainer {
+      width: calc(50% - 2rem);
+    }
+    .container .imgContainer img {
+      max-height: 200px;
+    }
+  }
+  
+  @media all and (max-width: 1000px) {
+    .container .imgContainer {
+      width: calc(100%);
+    }
+    .container.imgContainer img {
+      max-height: 200px;
+    }
+  }
   .container .imgContainer {
-    width: calc(33% - 2rem);
+    max-width: 500px;
+    max-height: 600px;
+    //max-width: 750px;
+    margin: 1rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
   }
-  .button {
-    display: block;
-    margin: 0.4em auto;
-  }
-}
-
-@media all and (max-width: 1750px) {
-  .container .imgContainer {
-    width: calc(50% - 2rem);
-  }
+  
   .container .imgContainer img {
-    max-height: 200px;
+    width: 300px;
+    max-height: 300px;
+    align-items: center;
+    transition: transform 450ms;
   }
-}
-
-@media all and (max-width: 1000px) {
-  .container .imgContainer {
-    width: calc(100%);
+  
+  .container .imgContainer img:hover {
+    transform: scale(1.12);
   }
-  .container.imgContainer img {
-    max-height: 200px;
+  
+  .button {
+    display: inline-block;
+    border-radius: 99px;
+    background-color: #1db954;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 150px;
+    transition: all 0.5s;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: 600;
   }
-}
-.container .imgContainer {
-  max-width: 500px;
-  max-height: 600px;
-  //max-width: 750px;
-  margin: 1rem;
-  border: 5px solid black;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-}
-
-.container .imgContainer img {
-  width: 300px;
-  max-height: 300px;
-  align-items: center;
-  transition: transform 450ms;
-}
-
-.container .imgContainer img:hover {
-  transform: scale(1.12);
-}
-
-.button {
-  display: inline-block;
-  border-radius: 99px;
-  background-color: #1db954;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  align-items: center;
-  font-size: 20px;
-  padding: 15px;
-  width: 150px;
-  transition: all 0.5s;
-  margin: 20px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.button-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.button span {
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.container .imgContainer h4 {
-  color: #fff;
-  text-align: center;
-  font-size: 26px;
-}
-
-.imgContainer p {
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-}
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .container .imgContainer h4 {
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+  }
+  
+  .imgContainer p {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+  

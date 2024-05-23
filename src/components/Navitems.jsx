@@ -20,15 +20,9 @@ export const navItems = [
       cName: "menu-item",
     },
     {
-      id: 2,
+      id: 3,
       title: "Water",
       path: "./water",
-      cName: "menu-item",
-    },
-    {
-      id: 3,
-      title: "Counters",
-      path: "./counters",
       cName: "menu-item",
     },
   ];

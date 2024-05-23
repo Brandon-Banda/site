@@ -6,11 +6,11 @@ function Gear() {
   return (
     <div className="container">
       {Images.map(({ img, idx, title, desc, link, type }) => (
-        <div className="imgContainer">
+        <div key={idx} className="imgContainer">
           <h4> {title} </h4>
           <img key={idx} src={img} alt="imagee" />
           <p> {desc} </p>
-          <a href={link} class="button" target="_blank" rel="noreferrer">
+          <a href={link} className="button" target="_blank" rel="noreferrer">
             Check price
           </a>
         </div>
@@ -43,11 +43,11 @@ function Gear() {
       </div>
 
       {outdated.map(({ img, idx, title, desc, link, type }) => (
-        <div className="imgContainer">
+        <div key={idx} className="imgContainer">
           <h4> {title} </h4>
           <img key={idx} src={img} alt="imagee" />
           <p> {desc} </p>
-          <a href={link} class="button" target="_blank" rel="noreferrer">
+          <a href={link} className="button" target="_blank" rel="noreferrer">
             Check price
           </a>
         </div>
