@@ -12,19 +12,22 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        {/* <Link to="/" className="navbar-logo">
-          flux
-        </Link> */}
         <ul className="navbar-nav">
+          <Link to="/" className="navbar-logo">
+            <img src="https://avatars.githubusercontent.com/u/61038766?v=4" />
+          </Link>
           {navItems.map((item) => {
             if (item.title) {
               return (
                 <li
                   key={item.id}
-                  className="nav-item"//{item.cName}
+                  className="nav-item" //{item.cName}
                   onClick={() => setDropdown(!dropdown)}
                 >
-                <a href="#" className="icon-button"> {<CaretIcon />} </a>
+                  <a href="#" className="icon-button">
+                    {" "}
+                    {<CaretIcon />}{" "}
+                  </a>
                   {dropdown && <Dropdown />}
                 </li>
               );
