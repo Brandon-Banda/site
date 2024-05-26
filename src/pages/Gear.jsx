@@ -1,4 +1,3 @@
-import React from "react";
 import Images, { outdated } from "../Images";
 import "./Gear.scss";
 

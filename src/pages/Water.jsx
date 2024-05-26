@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import "./Water.scss";
@@ -56,35 +56,43 @@ function ProgressBar() {
   return (
     <Track>
       <Thumb percentage={() => clamp(0, per, 100)} />
-      <h2 style={{ color: "white" , justifyContent: "center", alignItems: "center"}}>You've drank {per} oz Today!</h2>
-      <div className='button-container'>
-        <button className='button' onClick={() => setPer(per + 2)}>
+      <h2
+        style={{
+          color: "white",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        You've drank {per} oz Today!
+      </h2>
+      <div className="button-container">
+        <button className="button" onClick={() => setPer(per + 2)}>
           One Sip
         </button>
         <button
-          className='button'
+          className="button"
           onClick={() => setPer(1 * per + 1 * changeX)}
         >
           Add X
         </button>
-        <button className='button' onClick={() => setPer(0)}>
+        <button className="button" onClick={() => setPer(0)}>
           Reset
         </button>
         <button
-          className='button'
+          className="button"
           onClick={() => setPer(1 * per - 1 * changeX)}
         >
           Remove X
         </button>
         <input
-          type='text'
+          type="text"
           onKeyPress={(e) => handler(e)}
-          min='10'
-          max='10'
-          maxLength='3'
-          step='1'
+          min="10"
+          max="10"
+          maxLength="3"
+          step="1"
           placeholder={changeX + "±oz"}
-          pattern='[0-9]{3}'
+          pattern="[0-9]{3}"
           required
         />
       </div>
@@ -141,29 +149,29 @@ function Timer() {
   });
 
   return (
-    <div className='circleContainer'>
+    <div className="circleContainer">
       <div className={cn("circle", !isRunning && "paused")}>
-        <div className='time'>{seconds}</div>
+        <div className="time">{seconds}</div>
       </div>
-      <p className='status'>{status}</p>
-      <div className='buttons'>
+      <p className="status">{status}</p>
+      <div className="buttons">
         {isRunning ? (
           <button
-            className='play-pause'
+            className="play-pause"
             onClick={() => {
               setIsRunning(false);
             }}
           >
-            <i className='fa fa-pause fa-2x' />
+            <i className="fa fa-pause fa-2x" />
           </button>
         ) : (
-          <button className='play-pause' onClick={() => setIsRunning(true)}>
-            <i className='fa fa-play fa-2x' />
+          <button className="play-pause" onClick={() => setIsRunning(true)}>
+            <i className="fa fa-play fa-2x" />
           </button>
         )}
         <button
           disabled={!isRunning}
-          className='reset'
+          className="reset"
           onClick={() => {
             setIsRunning(false);
             setSeconds(60);
@@ -179,13 +187,13 @@ function Timer() {
 function Water() {
   return (
     <>
-    <div className='masterContainer'>
-      <Timer />
-      <div className='space'></div>
-      <BarContainer>
-        <ProgressBar />
-      </BarContainer>
-    </div>
+      <div className="masterContainer">
+        <Timer />
+        <div className="space"></div>
+        <BarContainer>
+          <ProgressBar />
+        </BarContainer>
+      </div>
     </>
   );
 }

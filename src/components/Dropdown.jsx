@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { serviceDropdown } from "./Navitems";
 import { Link } from "react-router-dom";
 import "./Nav.css";

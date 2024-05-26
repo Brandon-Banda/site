@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 import { navItems } from "./Navitems";
 import Dropdown from "./Dropdown";
-//import { ReactComponent as CaretIcon } from '../icons/caret.svg';
 import CaretIcon from "../icons/caret.svg?react";
 
 function Navbar() {
