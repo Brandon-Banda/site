@@ -1,0 +1,11 @@
+.homeHeader {
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.pictureFrame img {
+  border-radius: 50%;
+}

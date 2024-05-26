@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Water from "./pages/Water";
 import Nav from "./components/Nav";
 import Gear from "./pages/Gear";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -15,9 +16,5 @@ function App() {
       </Routes>
     </Router>
   );
-}
-
-function Home() {
-  return <div>Hi</div>;
 }
 export default App;
