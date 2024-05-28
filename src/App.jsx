@@ -6,13 +6,14 @@ import Gear from "./pages/Gear";
 import Home from "./pages/Home";
 
 function App() {
+  // TODO: Deploy
   return (
     <Router>
       <Nav />
       <Routes>
         <Route path="/water" element={<Water />} />
         <Route path="/" exact element={<Home />} />
-        <Route path="/gear" element={<Gear />} />
+        <Route path="/setup" element={<Gear />} />
       </Routes>
     </Router>
   );

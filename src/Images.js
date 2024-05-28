@@ -1,4 +1,6 @@
 const Images = [
+  // TODO: Change the order of these to make more sense or maybe categorize them
+
   {
     idx: 0,
     img: "https://image.benq.com/is/image/benqco/xl2540k-1-3?$ResponsivePreset$&fmt=png-alpha",
@@ -65,11 +67,11 @@ const Images = [
   },
   {
     idx: 9,
-    img: "https://i.imgur.com/4gUcCCI.png",
-    title: "Apple Magic Keyboard, White",
-    link: "https://www.amazon.com/Apple-Keyboard-Wireless-Rechargable-English/dp/B016QO64FI/ref=sr_1_6?dchild=1&keywords=apple+magic+keyboard&qid=1615057298&sr=8-6",
+    img: "https://media.steelseriescdn.com/thumbs/catalog/items/64821/1af2600ee10f4bc5a868b8b5e00f1d62.png.1400x1120_q100_crop-fit_optimize.png",
+    title: "SteelSeries Apex Pro TKL",
+    link: "https://www.amazon.com/gp/product/B0BF64DN6H/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
     type: "mac",
-    desc: "Great keyboard, Wireless comes in handy. I use this in clamshell mode with my macbook",
+    desc: "Bought for rapid trigger but wooting better",
   },
   {
     idx: 10,
@@ -89,11 +91,11 @@ const Images = [
   },
   {
     idx: 12,
-    img: "https://i.imgur.com/tKHzzQy.png",
-    title: "EVGA GeForce GTX 1080Ti SC Black Edition",
-    link: "https://www.amazon.com/EVGA-Optimized-Interlaced-Graphics-11G-P4-6393-KR/dp/B06Y11DFZ3?th=1",
+    img: "https://www.zotac.com/download/files/page/4080/4080_airo_image.png",
+    title: "ZOTAC RTX 4080",
+    link: "https://www.amazon.com/gp/product/B0BKK371SB/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
     type: "comp",
-    desc: "Bought this when it was the flagship, Great card, Probably wont have to upgrade for a while.",
+    desc: "Pretty nasty GPU for 1080p",
   },
   {
     idx: 13,
@@ -105,23 +107,23 @@ const Images = [
   },
   {
     idx: 14,
-    img: "https://ae01.alicdn.com/kf/Sfa7aa3913dee4fe3b3daf0d127a24368z/AKKO-3068B-Plus-Hot-Swappable-RGB-Mechanical-Gaming-Keyboard-Bluetooth-5-0-2-4Ghz-USB-C.png",
-    title: "Black & Pink 3068B Plus",
-    link: "https://en.akkogear.com/product/blackpink-3068b-mechanical-keyboard/",
+    img: "https://sc04.alicdn.com/kf/H373c019a518d4ad791cc8a6359a6fe4dI.png",
+    title: "Aula 75",
+    link: "https://www.amazon.com/gp/product/B0D14N2QZF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
     type: "per",
-    desc: "Really good keyboard for the price.",
+    desc: "Insanely good sounding and well built keyboard for the price",
   },
   {
     idx: 15,
-    img: "https://dlcdnwebimgs.asus.com/files/media/A9730D0E-D1A6-40C1-9282-F1BA1B13BFB4/v1/img/style/customization-front.png",
-    title: "ASUS ROG Strix B550-F Gaming",
-    link: "https://www.amazon.com/gp/product/B088VSTS9H/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1",
+    img: "https://asset.msi.com/resize/image/global/product/product_17011617930e1f7f23ef4d987a3b4229c39e5fca59.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+    title: "MSI PRO Z690-A DDR4",
+    link: "https://www.amazon.com/gp/product/B09GLD6LYW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
     type: "comp",
     desc: "Just an average mobo",
   },
   {
     idx: 16,
-    img: "https://i.ebayimg.com/images/g/844AAOSwzMBg3ajm/s-l1600.png",
+    img: "https://www.arctic.de/media/9b/24/e1/1583752715/Liquid_Freezer_II_360_G00.png",
     title: "ARCTIC Liquid Freezer II 360",
     link: "https://www.amazon.com/ARCTIC-Liquid-Freezer-All-One/dp/B07WNJCVNW/ref=sr_1_3?crid=Y82L93L94HXK&keywords=arctic+freezer+ii+360&qid=1665492530&qu=eyJxc2MiOiIzLjA3IiwicXNhIjoiMi4zOSIsInFzcCI6IjEuOTQifQ%3D%3D&s=electronics&sprefix=arctic+freezer+%2Celectronics%2C114&sr=1-3&ufe=app_do%3Aamzn1.fos.08f69ac3-fd3d-4b88-bca2-8997e41410bb",
     type: "comp",
@@ -129,11 +131,11 @@ const Images = [
   },
   {
     idx: 17,
-    img: "https://lytetechnology.com/wp-content/uploads/2020/08/Ryzen-7-2700-1.png",
-    title: "AMD Ryzen 7 5800X 8-core, 16-Thread",
-    link: "https://www.amazon.com/gp/product/B0815XFSGK/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1",
+    img: "https://cdn-reichelt.de/bilder/web/xxl_ws/E910/INTEL_BX8071513700K_03.png",
+    title: "Intel Core i7-13700KF 16 core",
+    link: "https://www.amazon.com/gp/product/B0BCDL7F5W/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
     type: "comp",
-    desc: "fps go brr",
+    desc: "Its aight I guess x3d better tho",
   },
   {
     idx: 18,
@@ -149,7 +151,7 @@ const Images = [
     title: 'ASUS PG279QZ 27" 1440p 165Hz IPS',
     link: "https://www.amazon.com/PG279Q-2560x1440-Monitor-Certified-Refurbished/dp/B07GWD3ZQL/ref=sr_1_2?dchild=1&keywords=asus+rog+swift+pg279qz+27+1440p+165hz&qid=1615057168&s=electronics&sr=1-2",
     type: "per",
-    desc: 'Really great monitor, great colors and size for productivity, could probably be replaced by a 32" OLED',
+    desc: "IPS is clean, 27 inch for productivity",
   },
   {
     idx: 20,
@@ -257,6 +259,14 @@ export const outdated = [
     link: "https://www.amazon.com/ASUS-VG248QE-1920x1080-Gaming-Monitor/dp/B00B2HH7G0",
     type: "per",
     desc: "24 inch, 1080p, 144Hz+ are the ideal specs for a gaming monitor. Have used this for like 8 years now.",
+  },
+  {
+    idx: 20,
+    img: "https://i.imgur.com/tKHzzQy.png",
+    title: "EVGA GeForce GTX 1080Ti SC Black Edition",
+    link: "https://www.amazon.com/EVGA-Optimized-Interlaced-Graphics-11G-P4-6393-KR/dp/B06Y11DFZ3?th=1",
+    type: "comp",
+    desc: "Bought this when it was the flagship, Great card, Probably wont have to upgrade for a while.",
   },
 ];
 
