@@ -100,6 +100,9 @@ function ProgressBar() {
         />
       </div>
       <p style={{ color: "white", fontSize: "30px" }}>One sip adds 2oz</p>
+      <p style={{ color: "white", fontSize: "30px" }}>
+        Can type a number and press enter to add and remove custom amounts
+      </p>
     </Track>
   );
 }
@@ -151,6 +154,18 @@ function Timer() {
     localStorage.setItem("timer-state", JSON.stringify(isRunning));
   });
 
+  function startTimer() {
+    setIsRunning(true);
+    console.log("Timer Started");
+    setStatus("Running");
+  }
+
+  function pauseTimer() {
+    setIsRunning(false);
+    console.log("Timer paused");
+    setStatus("Paused");
+  }
+
   return (
     <div className="circleContainer">
       <div className={cn("circle", !isRunning && "paused")}>
@@ -159,16 +174,11 @@ function Timer() {
       <p className="status">{status}</p>
       <div className="buttons">
         {isRunning ? (
-          <button
-            className="play-pause"
-            onClick={() => {
-              setIsRunning(false);
-            }}
-          >
+          <button className="play-pause" onClick={pauseTimer}>
             <img src={pause} />
           </button>
         ) : (
-          <button className="play-pause" onClick={() => setIsRunning(true)}>
+          <button className="play-pause" onClick={startTimer}>
             <img src={play} />
           </button>
         )}
