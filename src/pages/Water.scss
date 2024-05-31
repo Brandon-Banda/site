@@ -1,161 +1,160 @@
-.masterContainer{
+.masterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+input {
+  width: 100px;
+  border-radius: 10%;
+  background-color: rgb(58, 54, 54);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+.buttons {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  justify-items: center;
+
+  .play-pause img {
+    width: 4.5rem;
+    height: 4.5rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-top: 50px;
-  }
-  
-  input {
-    width: 100px;
-    border-radius: 10%;
-    background-color: rgb(58, 54, 54);
-    color: white;
-    font-size: 20px;
-    text-align: right;
-  
-    &:focus {
-      outline: none;
-    }
-  }
-  
-  button {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+    background: #6c7cb3;
     cursor: pointer;
-    &:focus {
-      outline: none;
-    }
-  
-    &::-moz-focus-inner {
-      border: 0;
+    transition: background 0.3s;
+    color: white;
+
+    &:hover {
+      background: darken(#6c7cb3, 10%);
     }
   }
-  
-  .buttons {
-      margin-top: 4rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 2rem;
-      justify-items: center;
-    
-      .play-pause {
-        width: 4.5rem;
-        height: 4.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        border: none;
-        border-radius: 50%;
-        background: #6c7cb3;
-        cursor: pointer;
-        transition: background 0.3s;
-        color: white;
-    
-        &:hover {
-          background: darken(#6c7cb3, 10%);
-        }
-      }
-    
-      .reset {
-        border: none;
-        padding: 0;
-        margin: 0;
-        background: none;
-        color: #fafafa;
-        font-weight: bold;
-        font-size: 1.5rem;
-        cursor: pointer;
-    
-        &:disabled {
-          cursor: not-allowed;
-          opacity: 0.6;
-        }
-      }
+
+  .reset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: #fafafa;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
     }
-    
-    .status {
-      color: white;
-      font-size: 2rem;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .space {
-      min-height: 100px;
-      margin: 50px;
-    }
-    
-    /* Main Container -  this controls the size of the circle */
-    .circleContainer {
-      width: 300px;
-      height: 300px;
-      margin: 0;
-      padding: 0;
-    }
-    
-    /* Circle Main draws the actual circle */
-    .circle {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      border: 2px solid white; /* can alter thickness and colour of circle on this line */
-      animation: 1s linear infinite alternate abberation;
-      margin: 0;
-      padding: 0;
-    
-      pointer-events: none;
-      z-index: -1;
-    }
-    @keyframes abberation {
-      from {
-        box-shadow: 0 0 0 0 #cb2918, 0 0 0 0 #56719a;
-      }
-      to {
-        box-shadow: 0.25rem 0.125rem 0 0 #cb2918, -0.25rem -0.125rem 0 0 #56719a;
-      }
-    }
-    
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-    
-    /* Circle Text Container - constrains text area to within the circle */
-    .circle_text_container {
-      /* area constraints */
-      width: 70%;
-      height: 70%;
-      max-width: 70%;
-      max-height: 70%;
-      margin: 0;
-      padding: 0;
-    
-      /* some position nudging to center the text area */
-      position: relative;
-      left: 15%;
-      top: 15%;
-    
-      /* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
-      transform-style: preserve-3d;
-    
-      /*border : 1px solid green;*/
-    }
-    
-    /* Circle Text - the appearance of the text within the circle plus vertical centering */
-    .time {
-      /* change font/size/etc here */
-      font: 5rem "Tahoma", Arial, Serif;
-      text-align: center;
-    
-      /* vertical centering technique */
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #ffffff;
-    }
-    
+  }
+}
+
+.status {
+  color: white;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.space {
+  min-height: 100px;
+  margin: 50px;
+}
+
+/* Main Container -  this controls the size of the circle */
+.circleContainer {
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Circle Main draws the actual circle */
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid white; /* can alter thickness and colour of circle on this line */
+  animation: 1s linear infinite alternate abberation;
+  margin: 0;
+  padding: 0;
+
+  pointer-events: none;
+  z-index: -1;
+}
+@keyframes abberation {
+  from {
+    box-shadow: 0 0 0 0 #cb2918, 0 0 0 0 #56719a;
+  }
+  to {
+    box-shadow: 0.25rem 0.125rem 0 0 #cb2918, -0.25rem -0.125rem 0 0 #56719a;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Circle Text Container - constrains text area to within the circle */
+.circle_text_container {
+  /* area constraints */
+  width: 70%;
+  height: 70%;
+  max-width: 70%;
+  max-height: 70%;
+  margin: 0;
+  padding: 0;
+
+  /* some position nudging to center the text area */
+  position: relative;
+  left: 15%;
+  top: 15%;
+
+  /* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
+  transform-style: preserve-3d;
+
+  /*border : 1px solid green;*/
+}
+
+/* Circle Text - the appearance of the text within the circle plus vertical centering */
+.time {
+  /* change font/size/etc here */
+  font: 5rem "Tahoma", Arial, Serif;
+  text-align: center;
+
+  /* vertical centering technique */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}

@@ -2,16 +2,18 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import "./Water.scss";
+import pause from "../../rsc/pause.svg";
+import play from "../../rsc/play.svg";
 
 let changeX = "";
 
 const handler = (event) => {
   const info = event.target.value;
   if (event.charCode === 13) {
-    //console.log("I want to add or remove " + info + " oz");
+    console.log("I want to add or remove " + info + " oz");
     event.target.value = "";
     changeX = info;
-    //console.log(changeX);
+    console.log(changeX);
   }
 };
 
@@ -86,6 +88,7 @@ function ProgressBar() {
         </button>
         <input
           type="text"
+          // TODO: Im sure the deprecated onkeypress makes it too where its null
           onKeyPress={(e) => handler(e)}
           min="10"
           max="10"
@@ -162,11 +165,11 @@ function Timer() {
               setIsRunning(false);
             }}
           >
-            <i className="fa fa-pause fa-2x" />
+            <img src={pause} />
           </button>
         ) : (
           <button className="play-pause" onClick={() => setIsRunning(true)}>
-            <i className="fa fa-play fa-2x" />
+            <img src={play} />
           </button>
         )}
         <button

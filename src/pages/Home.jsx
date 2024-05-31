@@ -9,7 +9,7 @@ function Home() {
         </div>
       </div>
       <div className="homeBody">
-        <p>Yadayadyada</p>
+        <p>Gamer turned Coder</p>
       </div>
     </div>
   );

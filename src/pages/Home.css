@@ -9,3 +9,9 @@
 .pictureFrame img {
   border-radius: 50%;
 }
+
+.homeBody {
+  color: white;
+  font-size: 32px;
+  padding: 10px;
+}
