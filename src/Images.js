@@ -1,5 +1,14 @@
 const Images = [
-  // TODO: Change the order of these to make more sense or maybe categorize them
+  // TODO: Change the order of these to make more sense, perhaps arrange by type
+  // TODO: Add missing items, remove the nzxt case its destroyed
+  // Missing items: ec2-cw, g pro superlight, qck+ heavy, apple magic keyboard, steelseries apex pro
+  /*
+  sorted by Types
+  PER = peripherals
+  COMP = computer, main setup I suppose
+  mac = macbook related setup I suppose
+  audio = audio related setup
+  */
 
   {
     idx: 0,
@@ -28,7 +37,7 @@ const Images = [
   {
     idx: 3,
     img: "https://i.imgur.com/HmfL7Xe.png",
-    title: "Apple MacBook Pro (13-inch, M1, 2020, 16GB RAM)",
+    title: "2020 M1 Macbook Pro 13'",
     link: "https://www.apple.com/shop/buy-mac/macbook-pro/13-inch-space-gray-apple-m1-chip-with-8-core-cpu-and-8-core-gpu-256gb",
     type: "mac",
     desc: "Powerful laptop for mobility, mobile app design, and separation of work and gaming",
@@ -67,11 +76,11 @@ const Images = [
   },
   {
     idx: 9,
-    img: "https://media.steelseriescdn.com/thumbs/catalog/items/64821/1af2600ee10f4bc5a868b8b5e00f1d62.png.1400x1120_q100_crop-fit_optimize.png",
-    title: "SteelSeries Apex Pro TKL",
-    link: "https://www.amazon.com/gp/product/B0BF64DN6H/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
-    type: "mac",
-    desc: "Bought for rapid trigger but wooting better",
+    img: "https://cdn.prod.website-files.com/612ca8920bc3a648125ffac3/615afbe3bda6a3d9f1fb4f83_Wooting-60HE.png",
+    title: "Wooting 60HE+",
+    link: "https://wooting.io/wooting-60he",
+    type: "per",
+    desc: "Best in slot for VALORANT",
   },
   {
     idx: 10,
@@ -108,7 +117,7 @@ const Images = [
   {
     idx: 14,
     img: "https://sc04.alicdn.com/kf/H373c019a518d4ad791cc8a6359a6fe4dI.png",
-    title: "Aula 75",
+    title: "Aula F75",
     link: "https://www.amazon.com/gp/product/B0D14N2QZF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
     type: "per",
     desc: "Insanely good sounding and well built keyboard for the price",
@@ -155,11 +164,11 @@ const Images = [
   },
   {
     idx: 20,
-    img: "https://i.imgur.com/PaR2Khy.png",
-    title: "G.SKILL 16GB (2 x 8GB) Ripjaws V Series DDR4 2400MHz",
-    link: "https://www.amazon.com/G-Skill-RipJaws-PC4-28800-CL16-19-19-39-F4-3600C16D-16GVKC/dp/B07X8DVDZZ/ref=sr_1_1?dchild=1&keywords=gskill+ripjaws+16gb&qid=1615056955&sr=8-1",
+    img: "https://www.avadirect.com/Pictures/500/13006960_1.png",
+    title: "Patriot Viper Steel 16GB(2x8) DDR4 4400Mhz CL19",
+    link: "https://www.amazon.com/Patriot-Viper-3200MHz-Performance-Memory/dp/B07KXLFDL6/ref=sr_1_3?crid=2WWMLLLB8FV5I&dib=eyJ2IjoiMSJ9.BxRPLN-_W1h4bjlZo8hiQiKtuG_Uh_FegIVp5ccq90xMDvyueinGFNNuBOtzznZUrJh1bVr5W5nSAViRvAULKBMuJGTSNwpEhOl5rDVFnAYVlUwfpyTu9P1fT79tZXI8QGUwsMD3Jsg-Q31UEId_YsukAoNkhNFyemUs5398a3FtBtXwmyJDIiMjAZhxF2Q0_4WeaYrKL1z4uQ0J7eem4QuIjrWt-_HqRxejKFfVjH0.sLIG1awliMNdg6qGDSADuvuVcNjTJarz2VP_fHoYYLI&dib_tag=se&keywords=patriot%2Bviper%2Bsteel%2Bddr4-4400%2B2%2Bx%2B8gb&qid=1717754625&sprefix=patriot%2Bviper%2B%2Caps%2C116&sr=8-3&th=1",
     type: "comp",
-    desc: "Decent ram, I definitely want to upgrade to 4k+ MHZ and maybe 32GB cause why not",
+    desc: "Very good value high speed low latency ram, Want DDR5 eventually",
   },
   {
     idx: 21,
